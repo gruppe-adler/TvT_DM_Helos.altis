@@ -19,7 +19,7 @@ class Params
 	class InitialVehicle
 	{
 		title = "initial Vehicle";
-		values[] = {0, 1, 2, 3, 4};
+		values[] = {0, 1, 2};
 		texts[] = {"Pawnee", "Hellcat", "Orca"};
 		default = 0;
 	};
