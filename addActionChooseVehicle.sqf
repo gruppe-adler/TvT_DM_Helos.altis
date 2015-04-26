@@ -16,16 +16,20 @@ _addActionVehicles = {
 		_vehicleActions pushBack (player addAction [
 			_x,
 			{
-				VEHICLE_CLASS_CHOICE = VEHICLE_CLASSES select (_this select 3);
-				call _clearVehicleActions;
+				_params = _this select 3;
+				VEHICLE_CLASS_CHOICE = VEHICLE_CLASSES select (_params select 0);
+				call (_params select 1);
 			},
-			_forEachIndex
+			[_forEachIndex, _clearVehicleActions]
 		]);
 
 	} forEach VEHICLE_NAMES;
 };
 
-_actionChooseVehicle = player addAction ["Choose next vehicle", {
-	player removeAction _actionChooseVehicle;
-	call _addActionVehicles;
-}];
+_actionChooseVehicle = player addAction [
+	"Choose next vehicle", {
+		player removeAction (_this select 3);
+		call _addActionVehicles;
+	},
+	_actionChooseVehicle
+];
