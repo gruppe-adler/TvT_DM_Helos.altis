@@ -5,7 +5,7 @@ class Header
 	maxPlayers = 18;
 };
 
-onLoadName = "TDM Helo Team Deathmatch";
+onLoadName = "TvT_DM_Helos";
 onLoadMission = "Simple TDM with a helicopter of your choice";
 author = "Arctorkovich, Fusselwurm";
 loadScreen = "loadscreen.jpg";
