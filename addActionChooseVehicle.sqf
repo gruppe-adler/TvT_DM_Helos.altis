@@ -1,43 +1,43 @@
-private ["_addActionVehicles", "_vehicleActions", "_addActionChooseVehicle"];
+private ["addActionVehicles", "_vehicleActions", "addActionChooseVehicle"];
 
-_vehicleActions = [];
+vehicleActions = [];
 
-_addActionVehicles = {
+addActionVehicles = {
 	private ["_clearVehicleActions"];
 
 	_clearVehicleActions = {
 		{
 			player removeAction _x;
-		} forEach _vehicleActions;
-		_vehicleActions = [];
+		} forEach vehicleActions;
+		vehicleActions = [];
 	};
 
 	{
-		_vehicleActions pushBack (player addAction [
+		vehicleActions pushBack (player addAction [
 			_x,
 			{
 				_params = _this select 3;
 				VEHICLE_CLASS_CHOICE = VEHICLE_CLASSES select (_params select 0);
 				call (_params select 1);
-				call (_params select 2);
+				call addActionChooseVehicle;
 			},
-			[_forEachIndex, _clearVehicleActions, _addActionChooseVehicle]
+			[_forEachIndex, _clearVehicleActions]
 		]);
 
 	} forEach VEHICLE_NAMES;
 };
 
-_addActionChooseVehicle = {
+addActionChooseVehicle = {
 
 	_actionChooseVehicle = player addAction [
 		"Choose next vehicle", {
 			_params = _this select 3;
 			player removeAction (_params select 0);
-			call (_params select 1)
+			call addActionVehicles;
 		},
-		[_actionChooseVehicle, _addActionVehicles]
+		[_actionChooseVehicle, addActionVehicles]
 	];
 
 };
 
-call _addActionChooseVehicle;
+call addActionChooseVehicle;
