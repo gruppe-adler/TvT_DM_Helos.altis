@@ -1,4 +1,4 @@
-private ["addActionVehicles", "_vehicleActions", "addActionChooseVehicle"];
+private ["_vehicleActions", "addActionChooseVehicle"];
 
 vehicleActions = [];
 

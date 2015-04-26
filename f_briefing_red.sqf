@@ -12,5 +12,3 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
 We need Air-dominance over Altis for Team Red. Shoot down as many Blue and Green helicopters as possible!
 "]];
-
-playMusic "aram";

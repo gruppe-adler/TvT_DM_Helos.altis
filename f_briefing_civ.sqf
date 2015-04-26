@@ -12,5 +12,3 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
 A three faction battle for Air-dominance is taking place. Observe and report!
 "]];
-
-playMusic "aram";
