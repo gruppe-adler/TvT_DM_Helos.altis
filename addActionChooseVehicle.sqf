@@ -1,4 +1,4 @@
-private ["_actionChooseVehicle", "_addActionVehicles", "_vehicleActions"];
+private ["_addActionVehicles", "_vehicleActions", "_addActionChooseVehicle"];
 
 _vehicleActions = [];
 
@@ -19,17 +19,25 @@ _addActionVehicles = {
 				_params = _this select 3;
 				VEHICLE_CLASS_CHOICE = VEHICLE_CLASSES select (_params select 0);
 				call (_params select 1);
+				call (_params select 2);
 			},
-			[_forEachIndex, _clearVehicleActions]
+			[_forEachIndex, _clearVehicleActions, _addActionChooseVehicle]
 		]);
 
 	} forEach VEHICLE_NAMES;
 };
 
-_actionChooseVehicle = player addAction [
-	"Choose next vehicle", {
-		player removeAction (_this select 3);
-		call _addActionVehicles;
-	},
-	_actionChooseVehicle
-];
+_addActionChooseVehicle = {
+
+	_actionChooseVehicle = player addAction [
+		"Choose next vehicle", {
+			_params = _this select 3;
+			player removeAction (_params select 0);
+			call (_params select 1)
+		},
+		[_actionChooseVehicle, _addActionVehicles]
+	];
+
+};
+
+call _actionChooseVehicle;
