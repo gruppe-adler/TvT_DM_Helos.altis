@@ -4,11 +4,11 @@ VEHICLE_CLASSES = [
  	"O_Heli_Light_02_F"
  ];
 
-VEHICLE_NAMES = {
+VEHICLE_NAMES = [
 	"Pawnee",
 	"Hellcat",
 	"Orca"
-};
+];
 
 VEHICLE_CLASS_INITIAL = VEHICLE_CLASSES select (paramsArray select 0);
 VEHICLE_CLASS_CHOICE = VEHICLE_CLASS_INITIAL;
