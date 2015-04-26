@@ -22,8 +22,6 @@ class Mission
 	randomSeed=4325289;
 	class Intel
 	{
-		briefingName="Adv18 Pawnee Panic v0-1";
-		overviewText="Simple Pawnee TDM. By Arctor.";
 		resistanceWest=0;
 		timeOfChanges=5400;
 		startWeather=0;
