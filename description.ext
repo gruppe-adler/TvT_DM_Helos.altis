@@ -1,0 +1,26 @@
+class Header
+{
+	gameType = TDM;
+	minPlayers = 1;
+	maxPlayers = 18;
+};
+
+onLoadName = "TDM Helo Team Deathmatch";
+onLoadMission = "Simple TDM with a helicopter of your choice";
+author = "Arctorkovich, Fusselwurm";
+loadScreen = "loadscreen.jpg";
+
+respawn = 2;
+respawnDelay = 12;
+// disabledAI = 1;
+
+class Params
+{
+	class InitialVehicle
+	{
+		title = "initial Vehicle";
+		values[] = {0, 1, 2, 3, 4};
+		texts[] = {"Pawnee", "Hellcat", "Orca"};
+		default = 0;
+	};
+};
