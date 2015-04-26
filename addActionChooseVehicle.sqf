@@ -40,4 +40,4 @@ _addActionChooseVehicle = {
 
 };
 
-call _actionChooseVehicle;
+call _addActionChooseVehicle;
