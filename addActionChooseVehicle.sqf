@@ -1,5 +1,3 @@
-private ["_vehicleActions", "addActionChooseVehicle"];
-
 vehicleActions = [];
 
 addActionVehicles = {
