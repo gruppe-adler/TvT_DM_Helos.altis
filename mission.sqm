@@ -18,7 +18,6 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
 		"A3_Characters_F_Civil",
-		"A3_Air_F_Heli_Light_01",
 		"a3_map_altis"
 	};
 	randomSeed=4325289;
@@ -54,7 +53,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14085.914,26.548496,19107.285};
+					position[]={4906.6108,153.88185,22323.004};
 					azimut=-270.233;
 					id=0;
 					side="WEST";
@@ -63,7 +62,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_blue_01";
-					
 					description="Blue Team Heli Pilot 1";
 				};
 			};
@@ -76,7 +74,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14070.06,26.695347,19107.416};
+					position[]={4879.0449,137.24986,22337.607};
 					azimut=-270.23297;
 					id=1;
 					side="WEST";
@@ -85,7 +83,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_blue_02";
-					
 					description="Blue Team Heli Pilot 2";
 				};
 			};
@@ -98,7 +95,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14054.324,26.544222,19107.73};
+					position[]={4851.0732,145.85126,22310.602};
 					azimut=-270.23297;
 					id=2;
 					side="WEST";
@@ -107,7 +104,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_blue_03";
-					
 					description="Blue Team Heli Pilot 3";
 				};
 			};
@@ -120,7 +116,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14038.685,25.580473,19107.977};
+					position[]={4824.7163,121.57468,22339.596};
 					azimut=-270.23297;
 					id=3;
 					side="WEST";
@@ -129,7 +125,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_blue_04";
-					
 					description="Blue Team Heli Pilot 4";
 				};
 			};
@@ -142,7 +137,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14021.929,25.311613,19107.9};
+					position[]={4798.3887,136.76527,22310.701};
 					azimut=-270.23297;
 					id=4;
 					side="WEST";
@@ -151,7 +146,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_blue_05";
-					
 					description="Blue Team Heli Pilot 5";
 				};
 			};
@@ -164,7 +158,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14005.867,25.234175,19107.867};
+					position[]={4769.2251,140.63548,22336.332};
 					azimut=-270.23297;
 					id=5;
 					side="WEST";
@@ -173,7 +167,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_blue_06";
-					
 					description="Blue Team Heli Pilot 6";
 				};
 			};
@@ -186,7 +179,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13586.103,16.151659,18489.598};
+					position[]={4370.4731,231.00229,21724.17};
 					azimut=-397.01889;
 					id=6;
 					side="EAST";
@@ -195,7 +188,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_red_01";
-					
 					description="Red Team Heli Pilot 1";
 				};
 			};
@@ -208,7 +200,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13595.849,16.390591,18475.393};
+					position[]={4393.2417,232.66753,21709.842};
 					azimut=-397.01889;
 					id=7;
 					side="EAST";
@@ -217,7 +209,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_red_02";
-					
 					description="Red Team Heli Pilot 2";
 				};
 			};
@@ -230,7 +221,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13603.959,16.852802,18462.912};
+					position[]={4385.0259,242.64169,21679.848};
 					azimut=-397.01889;
 					id=8;
 					side="EAST";
@@ -239,7 +230,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_red_03";
-					
 					description="Red Team Heli Pilot 3";
 				};
 			};
@@ -252,7 +242,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13612.135,16.745638,18450.375};
+					position[]={4418.9321,246.6019,21673.158};
 					azimut=-397.01889;
 					id=9;
 					side="EAST";
@@ -261,7 +251,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_red_04";
-					
 					description="Red Team Heli Pilot 4";
 				};
 			};
@@ -274,7 +263,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13621.52,17.024191,18436.926};
+					position[]={4411.6606,250.96378,21640.146};
 					azimut=-397.01889;
 					id=10;
 					side="EAST";
@@ -283,7 +272,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_red_05";
-					
 					description="Red Team Heli Pilot 5";
 				};
 			};
@@ -296,7 +284,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13630.725,17.840027,18423.063};
+					position[]={4445.5518,259.24686,21635.918};
 					azimut=-397.01889;
 					id=11;
 					side="EAST";
@@ -305,7 +293,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_red_06";
-					
 					description="Red Team Heli Pilot 6";
 				};
 			};
@@ -318,7 +305,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14440.36,23.823004,18430.871};
+					position[]={5214.0991,262.9194,21636.033};
 					azimut=-138.04625;
 					id=12;
 					side="GUER";
@@ -327,7 +314,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_green_01";
-					
 					description="Green Team Heli Pilot 1";
 				};
 			};
@@ -340,7 +326,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14449.477,23.866959,18441.576};
+					position[]={5245.3198,267.8721,21641.695};
 					azimut=-138.04625;
 					id=13;
 					side="GUER";
@@ -349,7 +335,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_green_02";
-					
 					description="Green Team Heli Pilot 2";
 				};
 			};
@@ -362,7 +347,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14458.417,24.090601,18452.713};
+					position[]={5243.3145,275.21115,21669.283};
 					azimut=-138.04625;
 					id=14;
 					side="GUER";
@@ -371,7 +356,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_green_03";
-					
 					description="Green Team Heli Pilot 3";
 				};
 			};
@@ -384,7 +368,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14467.767,24.216799,18464.492};
+					position[]={5281.792,280.0657,21671.859};
 					azimut=-138.04625;
 					id=15;
 					side="GUER";
@@ -393,7 +377,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_green_04";
-					
 					description="Green Team Heli Pilot 4";
 				};
 			};
@@ -406,7 +389,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14477.75,24.441422,18476.131};
+					position[]={5284.5654,287.28006,21705.664};
 					azimut=-138.04625;
 					id=16;
 					side="GUER";
@@ -415,7 +398,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_green_05";
-					
 					description="Green Team Heli Pilot 5";
 				};
 			};
@@ -428,7 +410,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14487.734,25.000696,18488.127};
+					position[]={5316.3008,289.15732,21700.246};
 					azimut=-138.04625;
 					id=17;
 					side="GUER";
@@ -437,7 +419,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pilot_green_06";
-					
 					description="Green Team Heli Pilot 6";
 				};
 			};
@@ -450,7 +431,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14037.322,26.139399,18737.264};
+					position[]={4832.6123,338.87875,21954.238};
 					azimut=-270.233;
 					id=18;
 					side="CIV";
@@ -472,7 +453,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14034.806,26.212568,18735.436};
+					position[]={4830.0957,338.52859,21952.41};
 					azimut=-270.233;
 					id=19;
 					side="CIV";
@@ -494,7 +475,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14032.473,26.290613,18733.697};
+					position[]={4827.7627,338.43918,21950.672};
 					azimut=-270.233;
 					id=20;
 					side="CIV";
@@ -516,7 +497,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14030.139,26.346525,18732.232};
+					position[]={4825.4287,338.35129,21949.207};
 					azimut=-270.233;
 					id=21;
 					side="CIV";
@@ -531,29 +512,12 @@ class Mission
 			};
 		};
 	};
-	class Vehicles
-	{
-		items=1;
-		class Item0
-		{
-			presenceCondition="alive pilot_red_06";
-			position[]={13634.704,17.754244,18426.555};
-			azimut=-36.072929;
-			special="FLY";
-			id=22;
-			side="EMPTY";
-			vehicle="B_Heli_Light_01_armed_F";
-			skill=0.60000002;
-			text="heli_red_06";
-			init="this setObjectTexture [0,'#(argb,8,8,3)color(1,0,0,1)'];this setObjectTexture [1,'#(argb,8,8,3)color(1,0,0,1)'];";
-		};
-	};
 	class Markers
 	{
 		items=1;
 		class Item0
 		{
-			position[]={14041.021,26.847281,18718.871};
+			position[]={4836.3115,338.59344,21935.846};
 			name="mrk_center";
 			type="mil_flag";
 			a=1.5;
