@@ -11,26 +11,23 @@ switch (side _unit) do
 {
 	case West:
 	{
-		_unit unassignItem "NVGoggles"; 
+		_unit unassignItem "NVGoggles";
 		_unit removeItem "NVGoggles";
         _unit addHeadgear "H_MilCap_blue";
         _unit addUniform "U_B_HeliPilotCoveralls";
-        _unit addGoggles "G_Aviator";
 	};
 	case Resistance:
 	{
-		_unit unassignItem "NVGoggles_INDEP"; 
+		_unit unassignItem "NVGoggles_INDEP";
 		_unit removeItem "NVGoggles_INDEP";
 		_unit addHeadgear "H_Cap_grn";
         _unit addUniform "U_I_HeliPilotCoveralls";
-        _unit addGoggles "G_Aviator";
 	};
 	case East:
 	{
-		_unit unassignItem "NVGoggles_OPFOR"; 
+		_unit unassignItem "NVGoggles_OPFOR";
 		_unit removeItem "NVGoggles_OPFOR";
         _unit addHeadgear "H_Cap_red";
         _unit addUniform "U_O_PilotCoveralls";
-        _unit addGoggles "G_Aviator";
 	};
 };
