@@ -1,4 +1,5 @@
 vehicleActions = [];
+chooseVehicleAction = -1;
 
 addActionVehicles = {
 	private ["_clearVehicleActions"];
@@ -19,7 +20,9 @@ addActionVehicles = {
 				call (_params select 1);
 				call addActionChooseVehicle;
 			},
-			[_forEachIndex, _clearVehicleActions]
+			[_forEachIndex, _clearVehicleActions],
+			1,
+			false
 		]);
 
 	} forEach VEHICLE_NAMES;
@@ -27,13 +30,15 @@ addActionVehicles = {
 
 addActionChooseVehicle = {
 
-	_actionChooseVehicle = player addAction [
-		"Choose next vehicle", {
-			_params = _this select 3;
-			player removeAction (_params select 0);
+	chooseVehicleAction = player addAction [
+		"Choose next vehicle",
+		{
 			call addActionVehicles;
+			player removeAction chooseVehicleAction;
 		},
-		[_actionChooseVehicle]
+		nil,
+		0,
+		false
 	];
 
 };

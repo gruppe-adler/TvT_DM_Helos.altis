@@ -5,9 +5,9 @@ VEHICLE_CLASSES = [
  ];
 
 VEHICLE_NAMES = [
-	"Pawnee",
-	"Hellcat",
-	"Orca"
+	"Pawnee / AH-9",
+	"Hellcat / Wildcat",
+	"Orca / Kasatka"
 ];
 
 VEHICLE_CLASS_INITIAL = VEHICLE_CLASSES select (paramsArray select 0);
