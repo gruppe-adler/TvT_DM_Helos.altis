@@ -10,7 +10,7 @@ VEHICLE_NAMES = [
 	"Orca / Kasatka"
 ];
 
-VEHICLE_CLASS_INITIAL = VEHICLE_CLASSES select (paramsArray select 0);
+VEHICLE_CLASS_INITIAL = VEHICLE_CLASSES select ("InitialVehicle" call BIS_fnc_getParamValue);
 VEHICLE_CLASS_CHOICE = VEHICLE_CLASS_INITIAL;
 
 if (!isDedicated) then {
@@ -21,11 +21,15 @@ if (!isDedicated) then {
 
 	[] execVM "briefing.sqf";
 
-	_index = player addMPEventHandler ["MPkilled", {_null = [_this select 0, _this select 1] execVM "setTexture.sqf"}];
+	_index = player addMPEventHandler [
+        "MPkilled",
+        {
+            _null = [_this select 0, _this select 1] execVM "setTexture.sqf"
+        }
+    ];
 	[player, objNull] execVM "setTexture.sqf";
 };
 
 if (isServer) then {
-	execVM "triggerInitialRepawnAI.sqf"
+	[] call compile preprocessFileLineNumbers "triggerInitialRepawnAI.sqf";
 };
-

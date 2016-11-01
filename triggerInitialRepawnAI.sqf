@@ -6,4 +6,4 @@
 		[_x, objNull] execVM "onPlayerRespawn.sqf";
 	};
 
-} forEach playableUnits;
+} forEach allUnits;

@@ -1,6 +1,6 @@
 halfWay = {
-	_p1 = _this select 0;
-	_p2 = _this select 1;
+	_p1 = param [0];
+	_p2 = param [1];
 
 	[
 		(((_p1 select 0) + (_p2 select 0)) / 2),
@@ -10,8 +10,8 @@ halfWay = {
 };
 
 
-_newUnit = _this select 0;
-_oldUnit = _this select 1;
+_newUnit = param [0, objNull];
+_oldUnit = param [1, objNull];
 
 _newPosition = getPos _newUnit;
 

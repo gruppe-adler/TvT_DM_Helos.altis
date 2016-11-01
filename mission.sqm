@@ -1,26 +1,97 @@
-version=12;
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=135;
+	};
+	class MarkerIDProvider
+	{
+		nextID=3;
+	};
+	class Camera
+	{
+		pos[]={4909.2612,908.59985,22327.078};
+		dir[]={-0.054284398,-0.70418358,-0.70795226};
+		up[]={-0.053841289,0.70997983,-0.70216191};
+		aside[]={-0.99708307,-1.5780097e-007,0.076454587};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Characters_F",
+	"A3_Characters_F_Exp_Civil"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=1725044;
+class ScenarioData
+{
+	author="Fusselwurm";
+	saving=0;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
-	addOns[]=
-	{
-		"A3_Characters_F_BLUFOR",
-		"A3_Air_F_Heli_Light_01",
-		"a3_map_altis",
-		"A3_Characters_F_OPFOR",
-		"A3_Characters_F_INDEP",
-		"A3_Characters_F_Civil",
-		"a3_characters_f"
-	};
-	addOnsAuto[]=
-	{
-		"A3_Characters_F_BLUFOR",
-		"a3_characters_f",
-		"A3_Characters_F_OPFOR",
-		"A3_Characters_F_INDEP",
-		"A3_Characters_F_Civil",
-		"a3_map_altis"
-	};
-	randomSeed=4325289;
 	class Intel
 	{
 		resistanceWest=0;
@@ -42,585 +113,749 @@ class Mission
 		startFogDecay=0.0049999999;
 		forecastFogDecay=0.0049999999;
 	};
-	class Groups
+	class Entities
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4906.6108,153.88185,22323.004};
-					azimut=-270.233;
-					id=0;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_blue_01";
-					description="Blue Team Heli Pilot 1";
-				};
-			};
-		};
-		class Item1
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4879.0449,137.24986,22337.607};
-					azimut=-270.23297;
-					id=1;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_blue_02";
-					description="Blue Team Heli Pilot 2";
-				};
-			};
-		};
-		class Item2
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4851.0732,145.85126,22310.602};
-					azimut=-270.23297;
-					id=2;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_blue_03";
-					description="Blue Team Heli Pilot 3";
-				};
-			};
-		};
-		class Item3
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4824.7163,121.57468,22339.596};
-					azimut=-270.23297;
-					id=3;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_blue_04";
-					description="Blue Team Heli Pilot 4";
-				};
-			};
-		};
-		class Item4
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4798.3887,136.76527,22310.701};
-					azimut=-270.23297;
-					id=4;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_blue_05";
-					description="Blue Team Heli Pilot 5";
-				};
-			};
-		};
-		class Item5
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4769.2251,140.63548,22336.332};
-					azimut=-270.23297;
-					id=5;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_blue_06";
-					description="Blue Team Heli Pilot 6";
-				};
-			};
-		};
-		class Item6
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4370.4731,231.00229,21724.17};
-					azimut=-397.01889;
-					id=6;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_red_01";
-					description="Red Team Heli Pilot 1";
-				};
-			};
-		};
-		class Item7
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4393.2417,232.66753,21709.842};
-					azimut=-397.01889;
-					id=7;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_red_02";
-					description="Red Team Heli Pilot 2";
-				};
-			};
-		};
-		class Item8
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4385.0259,242.64169,21679.848};
-					azimut=-397.01889;
-					id=8;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_red_03";
-					description="Red Team Heli Pilot 3";
-				};
-			};
-		};
-		class Item9
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4418.9321,246.6019,21673.158};
-					azimut=-397.01889;
-					id=9;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_red_04";
-					description="Red Team Heli Pilot 4";
-				};
-			};
-		};
-		class Item10
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4411.6606,250.96378,21640.146};
-					azimut=-397.01889;
-					id=10;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_red_05";
-					description="Red Team Heli Pilot 5";
-				};
-			};
-		};
-		class Item11
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4445.5518,259.24686,21635.918};
-					azimut=-397.01889;
-					id=11;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_red_06";
-					description="Red Team Heli Pilot 6";
-				};
-			};
-		};
-		class Item12
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5214.0991,262.9194,21636.033};
-					azimut=-138.04625;
-					id=12;
-					side="GUER";
-					vehicle="I_soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_green_01";
-					description="Green Team Heli Pilot 1";
-				};
-			};
-		};
-		class Item13
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5245.3198,267.8721,21641.695};
-					azimut=-138.04625;
-					id=13;
-					side="GUER";
-					vehicle="I_soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_green_02";
-					description="Green Team Heli Pilot 2";
-				};
-			};
-		};
-		class Item14
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5243.3145,275.21115,21669.283};
-					azimut=-138.04625;
-					id=14;
-					side="GUER";
-					vehicle="I_soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_green_03";
-					description="Green Team Heli Pilot 3";
-				};
-			};
-		};
-		class Item15
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5281.792,280.0657,21671.859};
-					azimut=-138.04625;
-					id=15;
-					side="GUER";
-					vehicle="I_soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_green_04";
-					description="Green Team Heli Pilot 4";
-				};
-			};
-		};
-		class Item16
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5284.5654,287.28006,21705.664};
-					azimut=-138.04625;
-					id=16;
-					side="GUER";
-					vehicle="I_soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_green_05";
-					description="Green Team Heli Pilot 5";
-				};
-			};
-		};
-		class Item17
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5316.3008,289.15732,21700.246};
-					azimut=-138.04625;
-					id=17;
-					side="GUER";
-					vehicle="I_soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="pilot_green_06";
-					description="Green Team Heli Pilot 6";
-				};
-			};
-		};
-		class Item18
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4832.6123,338.87875,21954.238};
-					azimut=-270.233;
-					id=18;
-					side="CIV";
-					vehicle="C_man_1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="observer_1";
-					init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
-					description="Observer 1";
-				};
-			};
-		};
-		class Item19
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4830.0957,338.52859,21952.41};
-					azimut=-270.233;
-					id=19;
-					side="CIV";
-					vehicle="C_man_1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="observer_2";
-					init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
-					description="Observer 2";
-				};
-			};
-		};
-		class Item20
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4827.7627,338.43918,21950.672};
-					azimut=-270.233;
-					id=20;
-					side="CIV";
-					vehicle="C_man_1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="observer_3";
-					init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
-					description="Observer 3";
-				};
-			};
-		};
-		class Item21
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={4825.4287,338.35129,21949.207};
-					azimut=-270.233;
-					id=21;
-					side="CIV";
-					vehicle="C_man_1";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="observer_4";
-					init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
-					description="Observer 4";
-				};
-			};
-		};
-	};
-	class Markers
-	{
-		items=1;
-		class Item0
-		{
+			dataType="Marker";
 			position[]={4836.3115,338.59344,21935.846};
 			name="mrk_center";
 			type="mil_flag";
 			a=1.5;
 			b=1.5;
+			id=90;
 		};
-	};
-};
-class Intro
-{
-	addOns[]=
-	{
-		"a3_map_stratis",
-		"a3_map_altis"
-	};
-	addOnsAuto[]=
-	{
-		"a3_map_altis"
-	};
-	randomSeed=7410791;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogBase=0.001;
-		forecastFogBase=0.001;
-		startFogDecay=0.0049999999;
-		forecastFogDecay=0.0049999999;
-	};
-};
-class OutroWin
-{
-	addOns[]=
-	{
-		"a3_map_stratis",
-		"a3_map_altis"
-	};
-	addOnsAuto[]=
-	{
-		"a3_map_altis"
-	};
-	randomSeed=2690366;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogBase=0.001;
-		forecastFogBase=0.001;
-		startFogDecay=0.0049999999;
-		forecastFogDecay=0.0049999999;
-	};
-};
-class OutroLoose
-{
-	addOns[]=
-	{
-		"a3_map_stratis",
-		"a3_map_altis"
-	};
-	addOnsAuto[]=
-	{
-		"a3_map_altis"
-	};
-	randomSeed=8447089;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogBase=0.001;
-		forecastFogBase=0.001;
-		startFogDecay=0.0049999999;
-		forecastFogDecay=0.0049999999;
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4906.3979,153.76755,22323.213};
+						angles[]={0.50437737,1.56673,0.12992966};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_blue_01";
+						description="Blue Team Heli Pilot 1";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=92;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=91;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4879.0449,137.22269,22337.709};
+						angles[]={0.52458513,1.5667305,0.29512221};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_blue_02";
+						description="Blue Team Heli Pilot 2";
+						isPlayable=1;
+					};
+					id=94;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=93;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4851.0732,145.82639,22310.703};
+						angles[]={0.47425634,1.5667305,0.15475459};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_blue_03";
+						description="Blue Team Heli Pilot 3";
+						isPlayable=1;
+					};
+					id=96;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=95;
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4824.7163,121.54197,22339.697};
+						angles[]={0.60443455,1.5667305,0.33845538};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_blue_04";
+						description="Blue Team Heli Pilot 4";
+						isPlayable=1;
+					};
+					id=98;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=97;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4798.3887,136.71764,22310.803};
+						angles[]={0.76360387,1.5667305,6.194087};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_blue_05";
+						description="Blue Team Heli Pilot 5";
+						isPlayable=1;
+					};
+					id=100;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=99;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4769.2251,140.64149,22336.434};
+						angles[]={6.1940894,1.5667305,5.7224312};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_blue_06";
+						description="Blue Team Heli Pilot 6";
+						isPlayable=1;
+					};
+					id=102;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=101;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4370.4731,231.01924,21724.271};
+						angles[]={5.9892836,5.637084,0.18067597};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_red_01";
+						description="Red Team Heli Pilot 1";
+						isPlayable=1;
+					};
+					id=104;
+					type="O_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=103;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4393.2417,232.6613,21709.943};
+						angles[]={0.14823751,5.637084,0.027993103};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_red_02";
+						description="Red Team Heli Pilot 2";
+						isPlayable=1;
+					};
+					id=106;
+					type="O_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=105;
+		};
+		class Item9
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4385.0259,242.63466,21679.949};
+						angles[]={0.1638518,5.637084,6.1571898};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_red_03";
+						description="Red Team Heli Pilot 3";
+						isPlayable=1;
+					};
+					id=108;
+					type="O_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=107;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4418.9321,246.58733,21673.26};
+						angles[]={0.31332621,5.637084,0.23680486};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_red_04";
+						description="Red Team Heli Pilot 4";
+						isPlayable=1;
+					};
+					id=110;
+					type="O_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=109;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4411.6606,250.96179,21640.248};
+						angles[]={0.06656827,5.637084,0.1377874};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_red_05";
+						description="Red Team Heli Pilot 5";
+						isPlayable=1;
+					};
+					id=112;
+					type="O_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=111;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4445.5518,259.25,21636.02};
+						angles[]={6.2485366,5.637084,0.27917895};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_red_06";
+						description="Red Team Heli Pilot 6";
+						isPlayable=1;
+					};
+					id=114;
+					type="O_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=113;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5214.0991,262.92441,21636.135};
+						angles[]={6.211309,3.8738239,0.10890165};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_green_01";
+						description="Green Team Heli Pilot 1";
+						isPlayable=1;
+					};
+					id=116;
+					type="I_soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=115;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5245.3198,267.88974,21641.797};
+						angles[]={5.9771156,3.8738239,6.239212};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_green_02";
+						description="Green Team Heli Pilot 2";
+						isPlayable=1;
+					};
+					id=118;
+					type="I_soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=117;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5243.3145,275.21732,21669.385};
+						angles[]={6.1914434,3.8738239,0.21400595};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_green_03";
+						description="Green Team Heli Pilot 3";
+						isPlayable=1;
+					};
+					id=120;
+					type="I_soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=119;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5281.792,280.08115,21671.961};
+						angles[]={6.0163708,3.8738239,6.174284};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_green_04";
+						description="Green Team Heli Pilot 4";
+						isPlayable=1;
+					};
+					id=122;
+					type="I_soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=121;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5284.5654,287.27945,21705.766};
+						angles[]={0.039980642,3.8738239,0.21909007};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_green_05";
+						description="Green Team Heli Pilot 5";
+						isPlayable=1;
+					};
+					id=124;
+					type="I_soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=123;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5316.3008,289.17453,21700.348};
+						angles[]={5.984406,3.8738239,0.15605313};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="pilot_green_06";
+						description="Green Team Heli Pilot 6";
+						isPlayable=1;
+					};
+					id=126;
+					type="I_soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=125;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4832.6123,338.88058,21954.34};
+						angles[]={6.2751846,1.56673,0.13124429};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
+						name="observer_1";
+						description="Observer 1";
+						isPlayable=1;
+					};
+					id=128;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=127;
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4830.0957,338.53232,21952.512};
+						angles[]={6.2365508,1.56673,0.13124382};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
+						name="observer_2";
+						description="Observer 2";
+						isPlayable=1;
+					};
+					id=130;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=129;
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4827.7627,338.44022,21950.773};
+						angles[]={0.0080009829,1.56673,0.042636361};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
+						name="observer_3";
+						description="Observer 3";
+						isPlayable=1;
+					};
+					id=132;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=131;
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4825.4287,338.35233,21949.309};
+						angles[]={0.0080009829,1.56673,0.042636361};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addAction [""Start Camera"",""camera.sqf"",[],2,false,true,"""",""""]; this allowDamage false;";
+						name="observer_4";
+						description="Observer 4";
+						isPlayable=1;
+					};
+					id=134;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=133;
+		};
 	};
 };
