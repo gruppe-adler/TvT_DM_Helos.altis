@@ -1,0 +1,8 @@
+{
+    "name": "tdm18_pawnee-panic.altis",
+    "description": "Team Deathmatch with helicopters",
+    "version": "0.0.1",
+    "dependencies": {
+        "grad-loadout": "^4.3.0"
+    }
+}
