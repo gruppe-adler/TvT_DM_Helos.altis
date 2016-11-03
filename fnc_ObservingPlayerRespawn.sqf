@@ -23,11 +23,6 @@ if (!(isNull _oldUnit)) then {
 	_desiredPosition = [_center, getPos _oldUnit] call halfWay;
 };
 
-
-
-[_newUnit] execVM "pilotKit.sqf";
-_newUnit moveInDriver _heli;
-
 if (!(isNull _oldUnit) && ! alive _oldUnit) then {
 	deleteVehicle _oldUnit;
 };
