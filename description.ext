@@ -51,6 +51,11 @@ class Loadouts {
     };
 };
 
+#define MODULES_DIRECTORY node_modules
+class CfgFunctions {
+  #include "node_modules\grad-loadout\cfgFunctions.hpp"
+};
+
 class CfgFunctions {
     PATHTO_FNC(OnFightingPlayerRespawn);
 };
