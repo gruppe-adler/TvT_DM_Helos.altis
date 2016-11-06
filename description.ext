@@ -1,3 +1,5 @@
+#include "\x\cba\addons\main\script_macros_mission.hpp"
+
 class Header
 {
 	gameType = TDM;
@@ -27,7 +29,7 @@ class Params
 
 class Loadouts {
     resetLoadout = 1;
-
+    baseDelay = 0;
     class AllUnits {
         gps = "ItemGPS";
     };
@@ -37,7 +39,7 @@ class Loadouts {
             headgear = "H_MilCap_blue";
             uniform = "U_B_HeliPilotCoveralls";
     	};
-    	class Resistance {
+    	class Independent {
     		headgear = "H_Cap_grn";
             uniform = "U_I_HeliPilotCoveralls";
     	};
@@ -53,9 +55,20 @@ class Loadouts {
 
 #define MODULES_DIRECTORY node_modules
 class CfgFunctions {
-  #include "node_modules\grad-loadout\cfgFunctions.hpp"
+    class Mission {
+        class Spawn {
+            PATHTO_FNC(OnFightingPlayerRespawn);
+            PATHTO_FNC(OnObservingPlayerRespawn);
+            PATHTO_FNC(SetTextures);
+        };
+    };
+
+    #include "node_modules\grad-loadout\cfgFunctions.hpp"
 };
 
-class CfgFunctions {
-    PATHTO_FNC(OnFightingPlayerRespawn);
+class VehicleColors {
+    WEST = "#(argb,8,8,3)color(0,0,1,1)";
+    EAST = "#(argb,8,8,3)color(1,0,0,1)";
+    GUER = "#(argb,8,8,3)color(0,1,0,1)";
+    ENEMY = "#(argb,8,8,3)color(1,1,1,1)";
 };

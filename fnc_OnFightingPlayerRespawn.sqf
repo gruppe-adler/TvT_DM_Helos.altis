@@ -28,11 +28,10 @@ _heli = createVehicle [VEHICLE_CLASS_CHOICE, _desiredPosition, [], 0, "FLY"];
 _nil = _newUnit addMPEventHandler [
 	"MPkilled",
 	{
-		_null = [_this select 0, _this select 1] execVM "setTexture.sqf"
+		[Mission_fnc_setTextures, [], 10] call CBA_fnc_waitAndExecute;
 	}
 ];
 
-[_newUnit] execVM "pilotKit.sqf";
 _newUnit moveInDriver _heli;
 
 if (!(isNull _oldUnit) && ! alive _oldUnit) then {

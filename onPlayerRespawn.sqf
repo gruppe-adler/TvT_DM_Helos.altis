@@ -3,8 +3,8 @@
 _newUnit = param [0, objNull];
 _oldUnit = param [1, objNull];
 
-if (faction _newUnit == CIV) then {
-    _this call fnc_OnObservingPlayerRespawn;
+if (side _newUnit == civilian) then {
+    _this call Mission_fnc_OnObservingPlayerRespawn;
 } else {
-    _this call fnc_OnFightingPlayerRespawn;
+    _this call Mission_fnc_OnFightingPlayerRespawn;
 };
