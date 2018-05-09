@@ -1,6 +1,6 @@
 private ["_unitfaction"];
 
-_unitfaction = toLower (faction player);
+_unitfaction = faction player;
 
 if (_unitfaction == "BLU_F") exitwith {
     #include "f_briefing_blue.sqf"

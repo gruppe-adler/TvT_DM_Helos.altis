@@ -14,22 +14,17 @@ VEHICLE_CLASS_INITIAL = VEHICLE_CLASSES select ("InitialVehicle" call BIS_fnc_ge
 VEHICLE_CLASS_CHOICE = VEHICLE_CLASS_INITIAL;
 
 if (!isDedicated) then {
-	if (side player != civilian) then
-	{
-		[player] execVM "pilotKit.sqf";
-	};
-
 	[] execVM "briefing.sqf";
 
-	_index = player addMPEventHandler [
+	player addMPEventHandler [
         "MPkilled",
         {
-            _null = [_this select 0, _this select 1] execVM "setTexture.sqf"
+            [Mission_fnc_setTextures, [], 10] call CBA_fnc_waitAndExecute;
         }
     ];
-	[player, objNull] execVM "setTexture.sqf";
+	[Mission_fnc_setTextures, [], 10] call CBA_fnc_waitAndExecute;
 };
 
 if (isServer) then {
-	[] call compile preprocessFileLineNumbers "triggerInitialRepawnAI.sqf";
+	[] call compile preprocessFileLineNumbers "triggerInitialRespawnAI.sqf";
 };
